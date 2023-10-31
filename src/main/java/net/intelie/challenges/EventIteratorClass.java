@@ -15,8 +15,10 @@ public class EventIteratorClass implements EventIterator
     public Integer indexVariable = -1;
     public Event currentEvent = null;
 
-    /* For logging of prints statements in test cases instatiateing
-    *  Logger object
+    /* For logging of prints statements in test cases instatiating
+    *  Logger object. Using slf4j for logging and verification of 
+    *  test cases using the print statements, which can be viewed in
+    *  Debug console.
     */
     private static Logger LOGGER = LoggerFactory.getLogger(EventIteratorClass.class);
 

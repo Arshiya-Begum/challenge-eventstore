@@ -23,7 +23,11 @@ public class EventStoreClass implements EventStore
      */
     public final List<Event> EventStoreList = Collections.synchronizedList(new ArrayList<Event>());
 
-    /* Declaring objects for logginf purpose */
+    /* For logging of prints statements in test cases instatiating
+     * Logger object. Using slf4j for logging and verification of 
+     * test cases using the print statements, which can be viewed in
+     * Debug console.
+     */
     private static Logger LOGGER = LoggerFactory.getLogger(EventStoreClass.class);
 
     /* Overriding insert method from EventStore Interface.
